@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sih2023/screens/home_screen.dart';
 import 'package:sih2023/screens/login_screen.dart';
+import 'package:sih2023/widgets/navbar_roots.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -95,7 +97,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     borderRadius: BorderRadius.circular(10),
                     child: InkWell(
                       onTap: () {
-                        // Navigator.push(context, MaterialPageRoute(builder: (context) =>));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => NavBarRoots()));
                       },
                       child: Padding(
                         padding:

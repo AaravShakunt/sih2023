@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sih2023/screens/login_screen.dart';
+import 'package:sih2023/widgets/navbar_roots.dart';
 import 'package:sih2023/screens/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -19,7 +20,8 @@ class WelcomeScreen extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) =>));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => NavBarRoots()));
                 },
                 child: Text(
                   "SKIP",
