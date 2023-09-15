@@ -1,7 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sih2023/screens/chatbot_screen.dart';
 import 'package:sih2023/screens/home_screen.dart';
+import 'package:sih2023/screens/quiz_screen.dart';
+import 'package:sih2023/screens/sentimental_screen.dart';
+
+import '../models/note_data.dart';
+import '../screens/screentime_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
   const NavBarRoots({Key? key}) : super(key: key);
@@ -15,8 +21,9 @@ class _NavBarRootsState extends State<NavBarRoots> {
   final _screens = [
     HomeScreen(),
     ChatbotScreen(),
-    Container(),
-    Container(),
+    QuizScreen(),
+    // ChangeNotifierProvider(create: (context) => NoteData()),
+    SentimentalScreen(),
   ];
   @override
   Widget build(BuildContext context) {
