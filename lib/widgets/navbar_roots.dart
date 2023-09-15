@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sih2023/screens/chatbot_screen.dart';
 import 'package:sih2023/screens/home_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
@@ -13,7 +14,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
   int _selectedindex = 0;
   final _screens = [
     HomeScreen(),
-    Container(),
+    ChatbotScreen(),
     Container(),
     Container(),
   ];

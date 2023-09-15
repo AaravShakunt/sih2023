@@ -41,7 +41,7 @@ class WelcomeScreen extends StatelessWidget {
               height: 50,
             ),
             Text(
-              "Doctors Appointment",
+              "Avyukt",
               style: TextStyle(
                 color: Color(0xFF7165D6),
                 fontSize: 35,
@@ -54,7 +54,7 @@ class WelcomeScreen extends StatelessWidget {
               height: 10,
             ),
             Text(
-              "Appoint your Doctor",
+              "Be Mentally Stable",
               style: TextStyle(
                 color: Colors.black54,
                 fontSize: 18,
